@@ -78,6 +78,10 @@ jobs:
          command: php artisan k:g
 
       - run:
+         name: Laravel Config Cache
+         command: php artisan config:cache
+
+      - run:
          name: 
          command: php artisan migrate --env=testing --force
 
