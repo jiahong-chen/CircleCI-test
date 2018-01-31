@@ -74,7 +74,11 @@ jobs:
          command: touch database/database.sqlite
 
       - run:
-         name: Migrate Laravel Database
+         name: Laravel Encryption Key
+         command: php artisan k:g
+
+      - run:
+         name: 
          command: php artisan migrate --env=testing --force
 
       - run:
