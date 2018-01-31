@@ -15,13 +15,13 @@ jobs:
       #https://askubuntu.com/questions/594656/how-to-install-the-latest-versions-of-nodejs-and-npm
       #We are using Node JS 6 because that's the current version on our local vagrant/homestead machines
       - run:
-         name: Download NodeJS v6
-         command: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+         name: Download NodeJS v9
+         command: curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 
       #sqlite needed for laravel database
       #nodejs6 needed to run `npm run watch` later
       - run:
-         name: Install PHP sqlite and nodejs 6
+         name: Install PHP sqlite and nodejs 9
          command: sudo apt-get install -y libsqlite3-dev nodejs
 
 
